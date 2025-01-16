@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- loading external script -->
+     <!-- these are stopping the code each time -->
+    <script src="ext1.js"></script>
+
+    <script>
+        var x = 5;
+
+    </script>
+
+    <title></title>
 </head>
-<body>
+<!-- will revert to 5 when reloading the page -->
+ <!-- it will increment if used correctly -->
+<body onload="alert(x);x++;">
     
+
+    <script src="ext2.js"></script>
+
+
+    <!-- these are all ways to fetch the middle image
+
+    document.images.dan.src
+    document.images['dan'].src
+    document.images[2].src
+
+
+    document.dan.src  -->
+
+    <img src=""/>
+    <img src=""/>
+    <img name="dan" src="this.jpg"/>
+    <img src=""/>
+    <img src=""/>
+
+    <!-- var -- use a variable outside of the scope youre in -->
+     <!-- const -- does not change is a constant -->
+    <!-- let -- use for regular variable use -->
+
+    <script>
+
+    let x = 5;
+    let y =6;
+    let z = '5';
+
+    // true since you are assigning it not checking its equality
+    // assign statement will always be true
+
+    /*
+
+    = - assignment
+    == - test the contents(does not give a shit about type)
+    === - test the content and type
+
+
+    */
+    if(x=y) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+
+
+    // this is a bad loop since you have to 
+    // recalculate hwo many images there are every time
+    for(let i = 0; document.images.length; i++){
+        document.images[i].src = "other.jpg";
+    }
+
+    // this puts let in front of them both
+    let x=5; y=6;
+
+    // good
+    for(let i = 0, len=document.images.length; i<len; i++){
+        document.images[i].src = "other.jpg";
+    }
+
+
+    </script>
+
+
 </body>
 </html>
+ 
