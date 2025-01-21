@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        //NOTES
+
+        // functions
+        
+        function doIt(a, b) {
+            // this code is run when it is called...
+
+            //arguments -- an array (any time you see plural)
+            arguments
+            return a+b;
+        }
+
+        // when you run this it does not error out
+        // good way to overload your functions
+        var num = doIt(5, 6, 7)
+
+
+        
+
+        // this is going to find the sum
+        function sumIt(){
+            //this code is run when it is called...
+            let c;
+            //
+            // let c=0 is now 11 
+            for(let i =0, len=argument.length; i<len; i++){
+                c=c+arguments[i];
+            }
+            return c;
+        }
+
+        //you will get a string named undefined 5, + is concatenation and 
+        //c is not instantiated with a value -- once you plus something it is a
+        //string
+
+        var num = sumIt(5);
+
+        //this gives you undefined 5 6 
+
+        var num2 = sumIt(5, 6);
+
+        //when let c=0
+        //you get 11 7 cause it adds and then concatenates 
+        //once to start concatenating it turns into a string for all other values
+        
+        var num = sumIt(5, 6, "7")
+
+
+        //there are a lot of events you can use, so you can probably find one
+
+
+        //different ways to write functions
+
+        function sumIt() {}
+
+        //should not really ever use this
+        let sumIt = function(){}
+
+        const sumIt = function(){}
+
+        const sumIt = x => x++
+
+        sumIt();
+
+
+        // you get 15
+        var x = "15px";
+
+        //you get 1
+        var y = "1.5px"
+
+        //you get 1
+        var z = "1j5px";
+
+        //this looks at all the characters and turns the ones that can be into numbers
+
+        parseInt(x);
+
+        //this will give you a number
+        //can just call the method with Math
+        Math.random()
+
+        //for example you must do this to use date
+        var d = new Date
+
+        //set interval vs settimeout
+        //interval -- repeatably 
+        //set timeout -- once
+
+
+        //arrays -- anything []
+        //is a not immutable array 
+        //cannot put a name-value pair into an array -- we'll use objects for that
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
