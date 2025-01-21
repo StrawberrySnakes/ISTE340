@@ -5,14 +5,93 @@
     <title></title>
     <!-- script in the head  -->
     <script>
-        alert(document.getElementsByTagName('p').length)
+        //shows zero and nothing
+        // alert(document.getElementsByTagName('p').length)
+
+        //tells error checker to now allow stupid stuff
+        //such as "delete object" or "delete array"
+
+        //prob a good idea to always write
+        'use strict'
+
+        //never use var in a const or a loop since var should never persist 
+        console.log('test with var');
+        var x = 5;
+        console.log("at the beginning ",x);
+        function test () {
+            //this dies at the end of the function
+            //exists only inside the function
+            //if 'x=6' than it goes and redefines var x (talks to outside scope)
+            var x = 6;
+            console.log('in the funct', x);//6
+            console.log('in the funct', window.x);//5
+        }
+        test();
+        console.log('at the end', x);
+        console.log('end var');
+
+
+        console.log('test with let');
+        let y = 5;
+        function test() {
+            let y = 6;
+            console.log('in the funct', y)//6
+            console.log('in the funct', window.y)//5
+        }
+        test();
+        console.log('at the end', y);
+        console.log('end let');
+
+        //Arrays
+        let myArr = ['peter', 'paul', 'mary'];
+        myArr[5] = 'Dan';
+        console.log('length:', myArr.length);
+
+        myArr[4]="Am";
+
+        //really dont want to do this
+        myArr['fist'] = "Fred";
+
+        //obj
+        //instead of a associative array make an object 
+
+        let obj = {
+            name: ["Dan", "Scott", "Bogaard"],
+            job: ["RIT", "Professor"],
+            funct: function(x){console.log(x);}
+        }
+
+        console.log(obj.name[1]);
+
+        for (let i in obj) {
+            //this is accessing the funct in obj
+            obj.funct(obj[i]);
+
+
+            //you can use to get things
+            console.log(obj[i]);
+            console.log(obj['name']);
+            console.log(obj.name);
+        }
+
+        ///////////////////end scope//////////////////
     </script>
 </head>
 <body>
 
     <p>hi</p>
 
-    <script></script>
+    <script>
+        //shows one but not hi or bye
+        // alert(document.getElementsByTagName('p').length)
+    </script>
+
+    <p>bye</p>
+
+    <script> 
+        //shows two but not bye
+        // alert(document.getElementsByTagName('p').length)
+    </script>
     
 </body>
 </html>
