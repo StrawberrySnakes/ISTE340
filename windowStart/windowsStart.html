@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>window play</title>
+
+	<!--  async lets you keep moving ahead with the html and other stuff -->
+	<!-- defer downloads the file during HTML parsing and will only execute after parsing  -->
+	<!-- use <script async> -->
+
+	<!-- async vs defer vs none-->
+
+	<!-- no designation, stops html parsing while it is downloaded(single thread) -->
+	<!-- <script scr="test.js"></script> -->
+
+
+	<!-- downloaded while the html is still moving ahead, executed as soon as possible, stopping html -->
+	<!-- <script scr="test.js" async></script> -->
+
+
+	<!-- downloaded while the html is still moving ahead, executed as soon as the html is done -->
+	<!-- <script scr="test.js" defer></script> -->
+
+	<script async>
+		// browser redirection!
+		// for first project, you MUST put this in...
+		// this covers your ass -- do you understand getElementById
+		if ( !document.getElementById) {
+			// are you a modern browser, can you do the code I want you to do
+			//if you are here, you dont know how to do modern code 
+			window.location = "redirect.html";
+		}
+
+		// when you create something new I comment
+		//when you create functions you comment
+		//when you have to think -- about how/what something does 
+		let myWin; //holder for ref of the external window
+
+		function makeNew() {
+			// name is second value
+			var myWin = window.open('http://rit.edu', '', 'height=300, width=250, top=200, left=300');
+			// bad
+			// document.write("<h1>Hi</h1>");
+
+			myWin.document.write("<h1>Hi</h1>");
+			
+			//do I have access?
+			// myWin.document.getElementsByTagName("ul").length;
+		}
+
+		function closeNew() {
+			// does not work since myWIn in function scope need to make global
+			myWin.close();
+		}
+
+
+	</script>
+</head>
+<body style="background-color:#999966;">
+<form>
+  <input type="button" value="Create New Window!" onclick="makeNew()"><br/>
+  <input type="button" value="Close the New Window!" onclick="closeNew()"><br/>
+</form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,17 @@
+when you use document.images[1].src = "other.jpg"
+to change the source of the images
+
+document.forms[0].elements[2]
+-- this is grabbing this first form, and the elements are all the form elements 
+-- labels are not considered form elements -- textfield, checkboxes ecx. are counted
+
+function funct() {
+    //?? how do I know which image was moused over -- use "this"
+    // remember the keyword this is on the practical/ I have a reference to the
+    thing I clicked on 
+
+    dom.drc = "change"
+}
+<img src ="one.jpg" onmouseover="funct()"/>
+<img src ="2.jpg" onmouseover="funct()"/>
+<img src ="3.jpg" onmouseover="funct()"/>

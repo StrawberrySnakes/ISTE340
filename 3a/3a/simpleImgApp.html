@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8" />
+    <title>Think like an App...</title>
+<style type="text/css">
+	  #bigPlace {position:absolute; top:115px; left:22px;}
+	  body{background:#999966;}
+	  .table { position:absolute;
+	   left:10px; 
+	   top:380px;
+	   z-index:70;
+	   padding:3px;
+	   border-bottom-width:3px; 
+	   border-left-width: 3px; 
+	   border-right-width: 3px; 
+	   border-top-width: 3px; 
+	   border-style: outset; 
+	   border-color:#336699; 
+	  }
+</style> 
+<script>
+
+
+let imgArr = []; //to hold my preloaded images 
+
+
+//this is before you start darawing lets load ... images, but that makes it slow
+//you should use await to make sure you load the images after there is something 
+//you can actually see
+
+function init(howMany) {
+
+    //will do this after the body is loaded, if they were huge images this would be
+    //a big deal
+    for (let i=0, len=howMany;i<len;i++) {
+        imgArr[i] = new Image();
+        imgArr[i].src = "media/gal"+(i+1)+"Big.jpg";
+
+    }
+}
+
+
+    //does the browser understand images 
+    // if(document.images) {
+        // image is a data type
+        // var x = new Image();
+        //preloaded an image the stupid way since you have to do every image 
+        // x.src = media/gal2Big.jpg
+    // }
+
+</script>
+</head>
+
+<!-- this onload really fires when you reach the end of the body tag -->
+ <!-- how many images? -->
+<!-- document.images.length is wrong, it is not reusable -->
+
+<!-- the onload function only works on body -->
+<!-- this is the correct way  -->
+<body onload="init(document.getElementById('loader').getElementsByTagName('img').length);">
+    <!--Big Pics-->
+    <div id="bigPlace">
+        <img src="media/gal1Big.jpg" name="bigPic" alt="big pics!" id="bigPic" />
+    </div><!--div holding all of the thumbs-->
+    <div class="table">
+        <div id="loader" style="height:90px; width:400px; overflow:auto; white-space: nowrap;">
+            <img src="media/gal1.jpg" onmouseover="this.style.cursor='pointer';" alt="image"/> 
+            <img src="media/gal2.jpg" onmouseover="this.style.cursor='pointer';" alt="image"/> 
+            <img src="media/gal3.jpg" onmouseover="this.style.cursor='pointer';" alt="image"/> 
+            <img src="media/gal4.jpg" onmouseover="this.style.cursor='pointer';" alt="image"/> 
+            <img src="media/gal5.jpg" onmouseover="this.style.cursor='pointer';" alt="image"/> 
+            <img src="media/gal6.jpg" onmouseover="this.style.cursor='pointer';" alt="image"/>
+        </div>
+    </div>
+</body>
+</html>
