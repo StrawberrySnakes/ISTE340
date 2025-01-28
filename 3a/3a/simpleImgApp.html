@@ -40,7 +40,6 @@ function init(howMany) {
     }
 }
 
-
     //does the browser understand images 
     // if(document.images) {
         // image is a data type
@@ -49,6 +48,34 @@ function init(howMany) {
         // x.src = media/gal2Big.jpg
     // }
 
+
+    function changeMe(dom) {
+        // hardcoded version
+        // document.getElementById('bigPic').src = "media/gal2Big.jpg";
+        console.log(dom.src);
+        //need to get the number out of the src!
+        //indexOf will look inside like regex, problem if there is another /gal
+        //so use last
+        let start = dom.src.lastIndexOf('/gal')+4;
+        let end = dom.src.lastIndexOf('.jpg');
+
+        // should have to do this
+        // let num = parseInt(dom.src.substring(start, end));
+
+        // not using the array here so it is slower 
+        // document.getElementById('bigPic').src = "media/gal" + num + "Big.jpg";
+
+        // document.getElementById('bigPic').src = imgArr[num-1].src;
+
+        //now - with data- !
+        var num = dom.getAttribute('data-num');
+        document.getElementById('bigPic').src = imgArr[num-1].src;
+
+
+
+        
+
+    }
 </script>
 </head>
 
@@ -65,12 +92,13 @@ function init(howMany) {
     </div><!--div holding all of the thumbs-->
     <div class="table">
         <div id="loader" style="height:90px; width:400px; overflow:auto; white-space: nowrap;">
-            <img src="media/gal1.jpg" onmouseover="this.style.cursor='pointer';" alt="image"/> 
-            <img src="media/gal2.jpg" onmouseover="this.style.cursor='pointer';" alt="image"/> 
-            <img src="media/gal3.jpg" onmouseover="this.style.cursor='pointer';" alt="image"/> 
-            <img src="media/gal4.jpg" onmouseover="this.style.cursor='pointer';" alt="image"/> 
-            <img src="media/gal5.jpg" onmouseover="this.style.cursor='pointer';" alt="image"/> 
-            <img src="media/gal6.jpg" onmouseover="this.style.cursor='pointer';" alt="image"/>
+            <!-- can use data- to get the data -->
+            <img src="media/gal1.jpg" data-num="1" onclick="changeMe(this)" onmouseover="this.style.cursor='pointer';" alt="image"/> 
+            <img src="media/gal2.jpg" data-num="2" onclick="changeMe(this)" onmouseover="this.style.cursor='pointer';" alt="image"/> 
+            <img src="media/gal3.jpg" data-num="3" onclick="changeMe(this)" onmouseover="this.style.cursor='pointer';" alt="image"/> 
+            <img src="media/gal4.jpg" data-num="4" onclick="changeMe(this)" onmouseover="this.style.cursor='pointer';" alt="image"/> 
+            <img src="media/gal5.jpg" data-num="5" onclick="changeMe(this)" onmouseover="this.style.cursor='pointer';" alt="image"/> 
+            <img src="media/gal6.jpg" data-num="6" onclick="changeMe(this)" onmouseover="this.style.cursor='pointer';" alt="image"/>
         </div>
     </div>
 </body>
