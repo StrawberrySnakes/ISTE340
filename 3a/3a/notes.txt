@@ -15,3 +15,24 @@ function funct() {
 <img src ="one.jpg" onmouseover="funct()"/>
 <img src ="2.jpg" onmouseover="funct()"/>
 <img src ="3.jpg" onmouseover="funct()"/>
+
+
+Day two
+Forms 
+
+form elements 
+<form method="" action="" onsubmit="">
+action--> a page if no action, it aims it back to same page
+method --> get or post, get has a limited size, post
+get - data in url, all non-post are gets, limited size 
+post - 
+
+page.php
+$_GET[]
+$_POST[]
+
+get
+page.php?name=value&name=value...
+
+post(cannot see it but it's not more secure)
+name=value&name=value...

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+
+        function val() {
+        // did they fill in all of the inputs
+        // if true - return true
+        //if false - return false
+        //for first only
+
+        let ret = true;
+
+        if(document.getElementById('first').value =="") {
+            document.getElementById('first').style.backgroundColor = "red";
+            ret = false;
+        }
+
+        if(document.getElementById('last').value=="") {
+            document.getElementById('last').style.backgroundColor = "red";
+            ret = false;
+            
+        }
+
+        return ret;
+    }
+    </script>
+</head>
+<body>
+
+    <!-- must have return or it will leave when you dont want it to -->
+    <form  method="" action="" onsubmit="return val()">
+        <!-- must have a name -->
+        first name<input id="first" type="text" name="fn"/><br/>
+        last name<input id="last" type="text" name="ln"/><br/>
+        <!-- triggers onsubmit of the form -->
+        <input type="submit" value="go">
+
+        <!-- page.php?fn=value&ln=value -->
+        <!-- in page.php -->
+        <!-- <?php
+          $_GET['fn'] get fn input
+          $_POST['ln'] gets ln input
+          
+          ?> -->
+
+
+
+
+    </form>
+    
+</body>
+</html>

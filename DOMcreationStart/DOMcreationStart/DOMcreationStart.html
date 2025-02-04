@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>DOM Creation</title>
+<script>
+	//some possible methods/props you will use! (know them!)
+	//createElement, createTextNode, setAttribute, appendChild, replaceChild, removeChild, cloneNode
+	//childNodes[], firstChild, nodeType, nodeName, nodeValue, 
+	//getElementById, getElementsByTagName, getElementsByName, getElementsByClassName 
+	
+	function createText(){
+		let hEle = document.createElement('h1');
+		//can set and attribute liek this
+		hEle.setAttribute('id', 'fred');
+		hEle.id='otherFred';
+
+		hEle.setAttribute('class', 'other');
+		//<h1 id="fred" class="other">
+		hEle.appendChild(document.createTextNode("this is fun!"));
+		//<h1 id="fred" class="other">this is fun!</h1>
+		document.getElementsByTagName('body')[0].appendChild(hEle);
+
+		//create the image
+		let imgEle = document.createElement('img');
+		imgEle.src = 'california.jpg';
+		document.getElementsByTagName('body')[0].appendChild(imgEle);
+
+		//radio button
+		let radEle = document.createElement('input');
+		// radEle.setAttribute('type', 'radio');
+		// or
+		radEle.type = 'radio';
+		document.getElementsByTagName('body')[0].appendChild(radEle);
+
+		//ul/li
+		let ulEle = document.createElement('ul');
+		//give ul all attr..
+		for(let i = 0; i<7; i++) {
+			let liEle = document.createElement('li');
+			//give li attr...
+			liEle.appendChild(document.createTextNode("I am number: ", + i));
+			ulEle.appendChild(liEle);
+		}
+
+		//put on page 
+		document.getElementsByTagName('body')[0].appendChild(ulEle);
+		ulEle.appendChild(liEle);
+
+		//what did you choose 
+		//when you click on that and send in this, 
+		//is this things paretnt the last child of this things parents parent 
+		//while it is not, kill the last block
+
+
+		function buildIt(dom){
+
+		}
+
+
+
+		
+	} 
+
+</script>
+</head>
+<body>
+<div id="buttons" style="position:absolute; top:8px; left:200px">
+  <button onclick="createText();">Create It!</button>
+</div>
+<body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

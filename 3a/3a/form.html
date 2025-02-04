@@ -4,12 +4,30 @@
 	<meta charset="utf-8" />
     <title>Form Play</title>
 	<script type="text/javascript">
+        function goThere(dom) {
+            // sent in this because I want something from the element(value)
+            if(dom.value != "none") {
+                window.location = dom.value;
+            }
+        }
   		
+        function checkColor(){
+            // loop through the radio, find the selected one adn print it out
+            for(let i=0, len=document.getElementsByName('color').length; i<len; i++) {
+                if(document.getElementsByName("color")[i].checked == true){
+                    //pump out the color
+                    let c = document.getElementsByName("color")[i].value;
+                    document.getElementById("output").value = c;
+                    // return leaves the function
+                    break;
+                }
+            }
+        }
 	</script>
 </head>
 <body> 
     <form id="myForm">
-        <select>
+        <select onchange="goThere(this)">
             <option value="none">
                 --Select page--
             </option>
@@ -25,11 +43,12 @@
         </select>
         <hr />
         <p>Which did you choose?<br />
-        <label for="r"><input type="radio" value="red" id="r"/> Red</label><br/>
-        <label for="g"><input type="radio" value="green" id="g"/> Green</label><br/>
-        <label for="b"><input type="radio" value="blue" id="b"/> Blue</label><br/>
-        <input type="button" value="Color choice" /></p>
-        <p>Your favorite color is: <input type="text" name="favorite" value="" /></p>
+        <!-- need names for radio, its how we group things -->
+        <label for="r"><input type="radio" value="red" name="color" id="r"/> Red</label><br/>
+        <label for="g"><input type="radio" value="green" name="color" id="g"/> Green</label><br/>
+        <label for="b"><input type="radio" value="blue" name="color" id="b"/> Blue</label><br/>
+        <input type="button" value="Color choice" onclick="checkColor()" /></p>
+        <p>Your favorite color is: <input id="output" type="text" name="favorite" value="" /></p>
     </form>
 </body>
 </html>
