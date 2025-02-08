@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>DOM Placement</title>
+	<script>
+		function changeMe(){
+      let rEle = document.createElement('input');
+      rEle.type = 'range';
+
+      //end of document
+      //document.getElementsByTagName('body')[0].appendChild(rEle);
+
+      //at end of id text
+      //document.getElementById('text').appendChild(rEle);
+
+      //insertBefore
+      //if you wanna go ver body, parent is body 
+      //parentTOGOInsideOf.insertBefore(ele, childOfParentToGoInFrontOf);
+
+      //these two look the same but are in technically different places 
+      //document.getElementByTagName('body')[0].insertBefore(rEle, 
+      //document.getElementsByTagName('body')[0].firstChild);
+      //
+      //document.getElementByTagName('body')[0].insertBefore(rEle, 
+      //document.getElementById('everything'));
+
+      // $$('body', 0).insertBefore(rEle, $$('body', 0));
+      // $$('body', 0).insertBefore(rEle, $('everything'));
+
+      // between two boxes 
+      // $('everything'.insertBefore(rEle, ))
+
+      //inside oragne box
+      //$('moreText').insertBefore(rEle, $("moreText").firstChild);
+
+      //parentOfChildToKill.rmoveChild(childOfParentToKill)
+      //$("everything").removeChild($("text"));
+
+      //parentHoldingThingToReplace.replaceChild(ele, childOfParentToReplace)
+      //$('everything').replaceChild(rEle, $('moreText'));
+
+      //node.cloneNode(t/f)
+      let c = $('everything').cloneNode(true);
+      $$('body', 0).appendChild(c);
+
+      //You can NOT use this on the project - but
+      //node.innerHTML = "string"
+
+
+
+      // $ is the shortcut ppl used for and Id 
+      //first thing to use on practice and project 
+      function $(id) {
+        return document.getElementById(id);
+      }
+
+      function $$(tag, num) {
+        return document.getElementsByTagName(tag)[num];
+        
+      }
+
+      function BuildId(dom) {
+        //look at data set if there is more data
+        let hold = data[dom.value]; //man
+        //is there more data to build select?
+        if(hold != undefined) {
+        //build the next
+        //create a div
+        //give div all attr
+
+        //build h1
+        //put hold[0] text in h1
+        //append h1 to div
+
+        //create a select
+        //give select attrs needed
+        //loop on hold.length
+          //create an option
+          //give option attr
+          //put text in option
+          //append option to select 
+
+          //append select to div
+          //append div to page
+
+        } else{
+          //there is no more data... build the form and output stuff
+        }
+
+
+        
+      }
+		
+		}
+	
+	</script>
+</head>
+<!-- need to know where it is to kill it -->
+<body>
+  <div id="everything">
+    <div id="buttons" style="position:absolute; top:8px; left:200px">
+      <button onclick="changeMe();">Do It!</button>
+    </div>
+
+    <div id="text" style="border:2px solid red;width:10em;">
+      Text
+    </div>
+    
+    <div id="moreText" style="border:2px solid orange;width:10em;">
+      More text
+    </div>
+   
+    <hr/> 
+  </div>
+</body>
+</html>

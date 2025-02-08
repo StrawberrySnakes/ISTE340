@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+
+<script>
+    // notes
+    let x = document.createElement('img');
+    x.setAttribute('src', 'path/pic.jpg');
+    //dom.appendChild()
+    //at end of something
+    //parentToGoAtEndOf.appendChild(ele);
+    document.getElementsByTagName('body')[0].appendChild(x);
+
+    //dom.insertBefore(ele, childOFParetnToGoInFrontOf);
+    //parentToGoInsideOf.insertBefore(ele, childOFParetnToGoInFrontOf)
+    document.getElementsByTagName('body')[0].insertBefore(x,
+    document.getElementsByTagName('body')[0].firstChild)
+
+    //parentHoldingThingToKill.romoveChild(childOfParentToKill);
+
+    //parentHoldingThingToReplace.replaceChild(childOfParentToReplace)
+
+    //thingToClone.cloneNode(t/f)
+
+</script>
+<body>
+
+    <section>test</section>
+
+    <section>test 
+        <div>more</div>
+    </section>
+
+    <section>test</section>
+    
+</body>
+</html>
