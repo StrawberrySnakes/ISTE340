@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>DHTMLAni</title>
+	<style>
+		div{
+			color:green;
+			cursor:pointer;	
+		}
+	</style>
+  	<script type="text/javascript">
+		//a universal dhtml...
+		function changeAll(dom, rule) {
+			//change the id coolBeans to have this style!
+			document.getElementById('coolBeans').style[rule] = dom.value
+		}
+
+		
+
+	//project must use
+	//requestAnimationFrame()
+
+  	</script>
+</head>
+<body>
+	<h2>DHTML review plus...</h2>
+	<div onmouseover="this.style.color='aqua'" onmouseleave="this.style.color='green'" style="border:2px solid grey;width:10em;margin-bottom:30px;">
+		mouseover test
+	</div>
+	<form action="" method="">
+ 		Put in a color name (or hex):<input type="text" onchange="changeAll(this, 'color')"/><br/>
+ 		Put in a font size (like 12pt):<input type="text" onchange="changeAll(this, 'fontSize')"/><br/>
+ 		Put in a font family:<input type="text" onchange="changeAll(this, 'fontFamily')"/><br/>
+ 		Put in a new left (like 100px):<input type="text" onchange="changeAll(this, 'left')"/><br/>
+ 		Put in a new top (like 200px):<input type="text" onchange="changeAll(this, 'top')"/><br/>
+ 		Put in a background color:<input type="text" onchange="changeAll(this, 'backgroundColor')"/><br/>
+	</form> 
+	<section id="coolBeans" style="border:2px solid red;width:10em;position:relative;">Some text to control</section>
+
+
+	<hr style="margin-top:2em;"/>
+	<h2>requestAnimationFrame()</h2>
+	<div id="move1" style="border:2px solid green;width:10em;position:relative;left:0px" 
+	onclick="requestAnimationFrame(simpleAni)">
+		First Slide Test
+	</div>
+	<script>
+		//first hard coded!
+		function simpleAni(x) {
+			let mover = document.getElementById('move1');
+			let pos = parseInt(mover.style.left);
+
+			if(pos<700) {
+				//move it
+				mover.style.left = parseInt(mover.style.left) + 5 + 'px';
+				requestAnimationFrame(simpleAni);
+			} else {
+				mover.style.left = '0px';
+			}
+			
+		}
+
+	</script>
+	
+	<div id="move2" style="border:2px solid aqua;width:10em;position:relative;left:0px" onclick="requestAnimationFrame(function(){aniWithArgs(document.getElementById('move2'), 900, 3);});">
+<!-- 
+	Has to be wrapped like this to work
+	onclick="requestAnimationFrame(function(){aniWithArgs(this, 900, 3)})"
+	onclick="requestAnimationFrame(aniWithArgs(this, 900, 3))" 
+	"requestAnimationFrame(functionName)" -->
+	
+		More Control Slide Test
+	</div>
+	<script>
+
+		function aniWithArgs(dom, end, delta) {
+			let pos = parseInt(dom.style.left);
+
+			if(pos<end) {
+				dom.style.left = parseInt(dom.style.left) + delta + "px";
+				requestAnimationFrame(function(){aniWithArgs(dom, end, delta);});
+			}
+		}
+		
+	</script>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
