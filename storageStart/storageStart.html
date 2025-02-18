@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Storage Example</title>
+	<script type="text/javascript" src="cookies.js"></script>
+	<script type="text/javascript">
+		////////////////////////////Careful - does not work on file:// (MUST upload to gibson)
+		//////For the project, do something that fits into what you are building - if you do this, you will get a "0" for storage
+		//localStorage & cookies
+
+		//fucntion changebg(what)
+		const changebg = (what) => {
+			//easy test for local storage 
+			// throwing not is a good way to test cookies 
+			if(window.localStorage) {
+				console.log('I am using localStorage');
+
+				//I want to turn the background to red (and want it to persist!)
+				//if there was an argument sent in..
+				if(what){
+					//they clicked on red or green
+					localStorage.setItem('color', what);
+
+				}
+
+				if(localStorage.getItem('color')) {
+					document.getElementsByTagName('body')[0].style.backgroundColor = localStorage.getItem('color');
+				}
+
+			} else {
+				console.log('maybe I should use cookies...?');
+			}
+
+			
+
+			//in my project store the previous countries selected 
+		}
+
+		function clearbg() {
+				//remove the color
+				localStorage.removeItem('color');
+				//redo bg
+				document.getElementsByTagName('body')[0].style.backgroundColor = '';
+			}
+
+
+	</script>
+</head>
+<body onload="changebg()">
+<div id="output"> </div>
+<div style="position:absolute;right:10px;bottom:10px;background:#c9c;">
+	Change your style. <span style="cursor:pointer;" onclick="changebg('red');">Red</span> | 
+	<span style="cursor:pointer;" onclick="changebg('green');">Green</span> | 
+	<span style="cursor:pointer;" onclick="clearbg()">Clear</span>
+</div>
+</body>
+</html>

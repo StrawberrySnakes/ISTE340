@@ -1,0 +1,40 @@
+<!-- HTML attribute event -->
+<script>
+function someFunct(x, dom) {
+    console.log(x)
+
+    //attached to window object
+    console.log(this)
+
+    //what called me, p
+    console.log(dom)
+}
+</script>
+<p onclick="someFunct(4, this)"></p>
+
+<!-- Javascript Property event -->
+ <script>
+
+    function doIt() {
+        console.log(this); //from line 23, it is a ref to p tag
+    }
+
+    //element.event = method
+    document.getElementById('thing').onclick = doIt;
+
+    //just doThat is called
+    document.getElementById('other').onclick = doThat;
+
+ </script>
+
+ <p id="thing"></p>
+ <div id="other">other</div>
+
+
+ <script>
+    //Add event listener 
+    document.getElementById('other').addEventListener('mouesout', myFunct);
+    document.getElementById('other').addEventListener('mouesout', function(){functWithArgs(4)});
+
+
+ </script>

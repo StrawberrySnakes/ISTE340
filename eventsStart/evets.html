@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function doIt() {
+            console.log(this);
+            //the below this can be either ne the window object ofr the assigned
+            //html element
+            //assignment on line 22 is html attr event, so window
+            //assignment on line 23 is js prop event, so assigned to the bottom
+        }
+
+        function start() {
+            let myB = document.createElement('button');
+            myB.appendChild(document.createElement('press me'));
+
+            //events
+            myB.setAttribute('onclick', 'doIt()');
+            myB.onmouseout = doIt;
+
+            document.getElementsByTagName('body')[0].appendChild(myB);
+        
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Events</title>
+	<script type="text/javascript">
+
+		function simpleFunct() {
+			console.log('simpleFunct - called and the value of this is', this);
+			//this window from html attribute event!
+		}
+
+		function functWithArgs(arg) {
+			console.log(arg)
+		}
+	//For Image 1 --------------------------------------------------------------------
+	//All as HTML attributes
+	// -since the call to 'this' is within the attribute, it refers to the element.
+	
+	
+	//For Image 2 --------------------------------------------------------------------
+	//assign an event to Image 2
+	function init() {
+		document.getElementsByTagName('img')[1].onclick = simpleFunct;
+
+		document.getElementsByTagName('img')[1].onmouseover=functWithArgs('from a js prop event!');
+
+		document.getElementsByTagName('img')[1].onmouseover=function(){
+			functWithArgs('from a js prop event!');
+			console.log(this);//????
+		};
+
+	}
+
+    //For Image 3 --------------------------------------------------------------------
+	//attach an event to Image 3
+	function init2() {
+		var dom = document.images[2];
+
+		//add event listener
+		dom.addEventListener('click', simpleFunct, {once:true});
+		dom.addEventListener('click', function() {
+			functWithArgs('dom add event listener');
+			console.log('simpleFunct again')
+			simpleFunct();
+		});
+
+	}
+
+
+	</script>
+</head>
+<body onload="init();init2()">
+
+  <h1>Image 1 (html attribute):</h1><img src="pic.jpg" onclick="simpleFunct();
+  functWithArgs('from html attribute event!')"/>
+  
+  <h1>Image 2 (JavaScript property):</h1><img src="pic.jpg"/>
+  
+  <h1>Image 3 (JavaScript listener):</h1><img src="pic.jpg"/>
+
+</body>
+</html>
