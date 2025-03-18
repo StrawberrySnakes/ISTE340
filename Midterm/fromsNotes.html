@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+
+    <script>
+        function val() {
+            //only works on input
+            if(document.getElementsByTagName('input')[0].value == '') {
+                //stops leaving the page
+                //still wrong, you have to still return it from the onsubmit
+                return false;
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- get is on url bar -->
+
+    <form action="page.php" method="get" onsubmit="return val()">
+        fn: <input type="text" placeholder="put name here"/>
+        <input type="submit" value="press me"/>
+    </form>
+    
+</body>
+</html>

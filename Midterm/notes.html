@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    //DOM
+    document.getElementById
+    document.getElementsByTagName('div')[2] 
+    document.getElementsByClassName
+    document.getElementsByName
+
+    //what most people do, try to trip through each div without incrementing it, must have square brackets
+    //this puts an onclick on an array, never do this
+    //document.getElementsByTagName('div').onclick...
+
+    document.getElementsByTagName('div')[2].firstChild.nodeValue='fred';
+    document.getElementsByTagName('div')[2].childNodes[0].nodeValue='fred';
+
+    //Dyn creation
+    //ul/li
+    createElement()
+    createTextNode()
+    setAttribute()
+
+    appendChild
+    insertBefore
+    ReplaceChild
+    removeChild
+    cloneNode
+
+    var u = document.createElement('ul');
+    //attributes
+    u.setAttribute('class', 'test');
+    //build lis
+    for(let i = 0; i<5; i++) {
+        let l = document.createElement('li');
+        l.appendChild(document.createTextNode('my number is', i));
+        u.appendChild(l)
+    }
+
+    //remember this 
+    document.getElementsByTagName('body')[0].appendChild(u);
+
+    //you will get 
+    // <ul class="text"> 
+    //     <li>my number is: 0</li>
+    //     <li>my numer is: 1</li>
+    // </ul>
+
+</script>
+<body>
+
+    <!-- DOM -->
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+
+    
+    
+</body>
+</html>

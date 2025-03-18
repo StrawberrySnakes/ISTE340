@@ -1,0 +1,252 @@
+/* General Styles */
+html {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-size: cover; /* Ensure the background covers the entire viewport */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating of the background image */
+    background-image: url('images/worldMap.png');
+}
+
+.error {
+    border-color: red;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.25rem;
+    margin: 20px 0;
+    color: #fefefe;
+    background-color: rgba(0, 0, 0, 0.511);
+    padding: 2vh;
+}
+
+p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+select:focus {
+    border-color: #131313;
+    outline: none;
+}
+
+label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #131313;
+    outline: none;
+}
+
+button {
+    background-color: #47ff47;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #21bb21;
+}
+
+.dropdown-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.selection-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 20px;
+    max-width: 90vw;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.selection-area {
+    display: none;
+    flex: 1;
+    min-width: 20vw;
+    line-height: 2;
+}
+
+#form-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#result-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;  /* Space between the divs */
+}
+
+#past-countries, #destinations-visited {
+    width: 45%;
+    padding: 1% 1% 2%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 3vh;
+}
+
+#visit-form-container {
+    text-align: center;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    /* min-width: 80vw; */
+}
+
+#visit-form {
+    /* max-width: 80vw; */
+    /* align-content: center; */
+    /* text-align: center; */
+    width: 70vw;
+}
+
+#result {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e0ffe0;
+    border-radius: 10px;
+    color: #333;
+    border: black solid 2px;
+}
+
+#popular-places {
+    /* margin-top: 50px; */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: 3vh; */
+    border: black 2px solid;
+}
+
+#popular-places h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+#popular-places p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 1%;
+}
+
+#form-container {
+    display: none;
+    flex: 1;
+    min-width: 20vw;
+    /* max-width: 450px; */
+    padding: 2%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1%;
+    border: black solid 2px;
+    
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #45e945;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #139b13;
+}
+
+/* Responsive: Stacks elements on smaller screens */
+@media (max-width: 768px) {
+    .selection-form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .selection-area, #form-container {
+        max-width: 100%;
+    }
+}
+

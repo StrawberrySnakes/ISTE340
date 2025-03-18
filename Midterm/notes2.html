@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <script>
+        //does not work since it does not exist yet have to set to an event 
+        // document.getElementsByTagName('body')[0].style.color = 'blue'
+
+        function doIt() {
+            let h = document.createElement('h1');
+            h.appendChild(document.createTextNode('Hello There'));
+
+            //with onmouse you can only have one but event listener you can have multiple
+            h.onclick = function(){fire('arg');};
+            h.onmouseenter = fire;
+            h.onmouseenter = other;
+            h.addEventListener('mouseleve', fire);
+
+            //appendChild
+            //parent.appendChild(ele)
+            document.getElementsByTagName('body')[0].appendChild(h)
+
+            //insert before
+            //parent.insertBefore(ele, childOfParentTOGoInFrontOf)
+            //document.getElementsByTagName("body")[0].insertBefore(h, document.getElementById())
+        }
+
+        function fire(x) {
+            console.log("you clicked me", this, x);
+        }
+    </script>
+</head>
+
+<body>
+
+    <button onclick="doIt()">click me</button>
+
+    <div id="1" style="width: 200px; height: 20px; border: red 2px solid;"></div>
+
+    <div id="2" style="width: 200px; height: 20px; border: orange 2px solid;"></div>
+
+    <div id="3" style="width: 200px; height: 20px; border: green 2px solid;"></div>
+
+    <section id="move" style="position: relative; left: 20px" onclick="move(this)">move me</section>
+
+    <section id="move" style="position: relative; left: 10px" onclick="requestAnimationFrame(moveIt(this))">move me</section>
+
+    <script>
+
+        function move(dom) {
+            //call the function to move the dom
+            // requestAnimationFrame(moveIt);
+            requestAnimationFrame(function(){moveIt(dom);});
+
+        }
+
+        function moveIt(d) {
+            // let d = document.getElementById('move');
+            if(parseInt(d.style.left) < 300) {
+                d.style.left = parseInt(d.style.left) + 3 + 'px';
+                requestAnimationFrame(function(){moveIt(d)});
+            }
+        }
+    </script>
+
+
+    
+</body>
+</html>

@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vacation Selector</title>
-    <script defer src="script.js"></script> <!-- Link to your JavaScript file -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            max-width: 600px;
-            margin: auto;
-        }
-        #form-container {
-            margin-bottom: 20px;
-        }
-        select {
-            display: block;
-            margin-top: 10px;
-            padding: 5px;
-        }
-    </style>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vacation Selector</title>
+        <!-- use 'defer' so the script loads asynchronously and executes only after the HTML is parsed fully -->
+        <!-- ensures all DOM elements are available when the script runs -->
+        <script defer src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Find Your Ideal Vacation Destination</h1>
 
-    <h1>Find Your Ideal Vacation Destination</h1>
-    <p>Answer the questions to get a vacation recommendation.</p>
+        <div class="selection-form-container">
 
-    <div id="form-container"></div> <!-- Dynamic dropdowns will be inserted here -->
-    
-    <h2 id="result"></h2> <!-- Final result will be displayed here -->
+            <!-- selection area -->
+            <div class="selection-area">
+                <div id="dropdown-container"></div> <!-- dropdowns added dynamically -->
+                <h2 id="result"></h2> <!-- result will be displayed -->
+            </div>
 
-</body>
+            <!-- form area -->
+            <div id="form-container">
+                <!-- form will be inserted dynamically-->
+            </div>
+        </div>
+    </body>
+
 </html>
