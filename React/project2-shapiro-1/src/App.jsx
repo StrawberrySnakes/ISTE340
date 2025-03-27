@@ -8,11 +8,9 @@
 import {useState, useEffect} from 'react';
 
 //import components 
-import People from './components/People.jsx'
+// import People from './components/PeopleDead.jsx'
 import BootAcc from './components/BootAcc.jsx'
 import PeopleTabs from './components/PeopleTabs.jsx'
-
-
 
 //get the css 
 import './App.css'
@@ -67,7 +65,8 @@ const App=() => {
         {/* FIrst Lets build something to grab people */}
         <BootAcc/>
         <PeopleTabs/>
-        <People/>
+
+        {/* <People/> */}
 
       </div>
     </div>

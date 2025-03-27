@@ -1,0 +1,19 @@
+last degree has a different structure, it is an if statement 
+extra--> go to resources or add more info 
+include a footer 
+
+Problems 
+--> minors 
+name title description courses 
+when you click on a course you are making another call to the courses, DO NOT load all the course data 
+want to build a particular URI
+ex. append ISTE-340 and then go get the data
+
+Employment --> bunch of data 
+
+tables --> need to paginate them, find data paginator and data grid
+
+make it look good 
+
+MUI has icons you can use 
+font awesome
