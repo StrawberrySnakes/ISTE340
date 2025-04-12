@@ -1,0 +1,143 @@
+/* Employment Page Main Styling */
+.employment-page {
+  max-width: 100%;
+  /* margin: 2rem auto; */
+  padding: 2rem;
+  background: #fff;
+  box-shadow: none; 
+  border-radius: 0;
+  color: #1b1c1d;
+  width: 100%;
+}
+  
+/* Section Titles */
+.employment-page h2 {
+  border-bottom: 2px solid #f76902;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+  /* margin-top: 2rem; */
+  color: #1b1c1d;
+  font-size: 2rem;
+}
+
+.content-section h3 {
+  margin-top: 1rem;
+  color: #333;
+  font-size: 1.6rem;
+}
+
+/* Statistic Cards */
+.degree-statistics .statistics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.statistic-item {
+  background: #f9f9f9;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+.statistic-item strong {
+  display: block;
+  font-size: 1.4rem;
+  color: #f76902;
+  margin-bottom: 0.5rem;
+}
+
+/* Employers & Careers List */
+.employers ul,
+.careers ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.employers li,
+.careers li {
+  margin-bottom: 0.3rem;
+  padding-left: 0.5rem;
+}
+
+/* Tables */
+.coop-table table,
+.professional-employment-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.coop-table table thead,
+.professional-employment-table table thead {
+  background-color: #1b1c1d;
+  color: white;
+}
+
+table th,
+table td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+/* Scrollable table containers */
+.coop-table, .professional-employment-table {
+  max-height: 600px;
+  overflow-y: auto;
+  margin-top: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 2vh 2vw;
+  border: 2px solid #f76902;
+}
+
+/* Scrollbar styling*/
+.coop-table::-webkit-scrollbar,
+.professional-employment-table::-webkit-scrollbar {
+  width: 6px;
+}
+
+.coop-table::-webkit-scrollbar-thumb,
+.professional-employment-table::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.table-search-input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.employment-map {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+#employers-careers {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

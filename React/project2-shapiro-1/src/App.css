@@ -1,38 +1,144 @@
-body{
-  display:block;
-  color: black;
+/* General Reset & Font */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #000;
 }
+
+/* Container */
 .App {
   text-align: center;
-  padding:0 3vw 3vw;
-  background-color:whitesmoke;
+  /* padding: 2rem 5vw; */
+  /* background-color: #f7f7f7; */
+  /* min-height: 100vh; */
 }
-.stick
-{ 
- text-align:center;
- position: sticky;
- top:0px;
- margin:0px;
- background-color: #1b1c1d;
- color:white;
- padding: 0px;
- font-size: 20px;
- font-weight: bold;
- z-index:9999;
- width:100vw;
+
+.navbar {
+  padding-left: 2vw;
 }
-.stick>h1{
-  margin:0;
+
+#root {
+  width: 100vw;
+  min-height: 100vh;
 }
-.About{
-  width:86vw;
-  margin-left:7vw;
+
+/* TopNav styling */
+.top-nav {
+  padding: 10px 20px; /* Add padding to make navbar less tight */
+  background-color: #222; /* Dark background for a sleek look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
-.About>h2{
-  margin:0;
+
+.navbar-brand {
+  font-size: 1.5rem; /* Make the brand name slightly larger */
+  color: #f76902 !important; /* Accent color (orange) for the brand */
+  padding: 0; /* Remove unnecessary padding around the brand */
 }
-.aboutQuote{
-  padding:0 2em;
-  border: 3px solid gray;
-  border-radius: 15px;
+
+.navbar-brand:hover {
+  color: #d65f00 !important; /* Darker orange for hover effect */
+}
+
+.nav-link {
+  color: #f4f4f4 !important; /* Light color for links */
+  font-size: 1rem; /* Adjust font size */
+  margin: 0 10px; /* Add space between nav links */
+  padding: 8px 16px; /* Add padding inside the links */
+  text-transform: capitalize; /* Capitalize link text */
+}
+
+.nav-link:hover {
+  color: #f76902 !important; /* Change to accent color on hover */
+  /* background-color: rgba(255, 255, 255, 0.1); Subtle background on hover */
+  border-radius: 5px; /* Round the corners for hover effect */
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  border-color: #f76902; /* Accent color for the toggle button */
+}
+
+.navbar-toggler-icon {
+  background-color: #f76902; /* Change the icon color to match the theme */
+}
+
+
+/* Sticky Header */
+.stick {
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  color: white;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  z-index: 9999;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sticky Header Title */
+.stick > h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #f76902; /* RIT Orange */
+}
+
+/* About Section */
+.About {
+  max-width: 1000px;
+  margin: 3rem auto;
+  text-align: left;
+}
+
+.About > h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #1b1c1d;
+  border-bottom: 2px solid #f76902;
+  display: inline-block;
+}
+
+/* Quote Section */
+.aboutQuote {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  /* border-left: 6px solid #f76902; */
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+  font-style: italic;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.aboutQuote:hover {
+  transform: translateY(-3px);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .About {
+    padding: 0 1rem;
+  }
+
+  .stick {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+
+  .About > h2 {
+    font-size: 1.5rem;
+  }
+
+  .aboutQuote {
+    padding: 1rem;
+  }
+}
+
+/* Accent Utility Class (Optional) */
+.accent {
+  color: #f76902;
 }

@@ -1,5 +1,5 @@
-import {useState, useEffect} from 'react';
-
+import { useState, useEffect } from 'react';
+// Second BootStrap Element
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
@@ -12,36 +12,40 @@ import './People.css';
 function PeopleTabs() {
   //state
   const [loaded, setLoaded] = useState(false);
-  const [people, setPeople] = useState()
+  const [people, setPeople] = useState();
 
-  useEffect(() =>{
+  useEffect(() => {
     getData('people/')
-    .then((json) => {
-      setPeople(json),
-      setLoaded(true);
-    })
+      .then((json) => {
+        setPeople(json);
+        setLoaded(true);
+      });
   }, []);
 
+  if (!loaded) {
+    return <div>Loading...</div>;
+  }
 
-  if(!loaded) return (<h1>loading people...</h1>)
-    
   return (
     <>
-    <h1>{people.title}</h1>
-    <h3>{people.subTitle}</h3>
-    <Tabs
-      defaultActiveKey="profile"
-      id="uncontrolled-tab-example"
-      className="mb-3"
-    >
-      <Tab eventKey="fac" title="Faculty">
-        <PeopleGroup title='Faculty' pepGroup={people.faculty}/>
+      <h1 id='people-h1'>{people.title}</h1>
+      <h3 id='people-h3'>{people.subTitle}</h3>
+      <Tabs defaultActiveKey="fac" id="people-tabs" className="mb-3">
+        <Tab 
+          eventKey="fac" 
+          // Inline style to override stuff from bootstrap
+          title={<span style={{ color: '#f76902', fontWeight: '600', fontSize: '1.2rem' }}>Faculty</span>}
+        >
+        <PeopleGroup title='Faculty' pepGroup={people.faculty} />
+        </Tab>
+      <Tab 
+        eventKey="staff" 
+        title={<span style={{ color: '#f76902', fontWeight: '600', fontSize: '1.2rem' }}>Staff</span>}
+      >
+        <PeopleGroup title='Staff' pepGroup={people.staff} />
       </Tab>
-      <Tab eventKey="staff" title="Staff">
-        <PeopleGroup title='Staff' pepGroup={people.staff}/>
-      </Tab>
-      
     </Tabs>
+
     </>
   );
 }

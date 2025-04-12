@@ -1,21 +1,185 @@
-.peopleList {
+/* Main Section Styling */
+#people-h1 {
+    margin-top: 4vh;
+    font-size: 2rem;
+    color: #1b1c1d;
+    text-align: center;
+    /* margin-bottom: 2rem; */
+    border-bottom: 2px solid #f76902;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+#people-h3 {
+    font-size: 1rem;
+    color: #888;
+    text-align: center;
+    /* display: inline-block; */
+    /* padding-bottom: 0.3rem; */
+    font-style: italic;
+}
+.people-section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Title Styling */
+  .people-section h1 {
+    font-size: 2rem;
+    color: #1b1c1d;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f76902;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+  }
+  
+  .people-section h3 {
+    font-size: 1.6rem;
+    color: #1b1c1d;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Tabs */
+  .nav-tabs {
+    border-bottom: 2px solid #f76902;
+  }
+
+  .nav-item {
+    color: #333
+  }
+  
+  .nav-tabs .nav-link.active {
+    background-color: #d55300;
+  }
+  .nav-link {
+    color: #333;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: none;
+    padding: 0.75rem 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #f76902;
+  }
+  
+  .nav-link.active {
+    background-color: #f76902;
+    color: white;
+    border-radius: 0.25rem 0.25rem 0 0;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  }
+  
+  /* People List */
+  .peopleList {
     display: flex;
     flex-wrap: wrap;
-}
-
-.peopleList > * {
-    /* grow, shrink, basis */
-    flex: 1 1 200px;
-}
-
-.peopleListItem{
-    min-height: 250px;
-    margin: 1em;
-    padding-top: 1em;
-    border: 3px solid #ddd;
-    border-radius: 15px;
-}
-
-.peopleListItem > img {
-    max-width: 150px;
-}
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .peopleListItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .peopleListItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image Style */
+  .peopleListItem img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px; 
+  }
+  
+  /* Button Style inside each person item */
+  .peopleListItem button {
+    background-color: #f76902;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    text-transform: none;
+    font-size: 14px;
+    margin-top: auto;
+    cursor: pointer;
+  }
+  
+  .peopleListItem button:hover {
+    background-color: #d65f00;
+  }
+  
+  .peopleListItem button:focus {
+    outline: none;
+  }
+  
+  /* Modal Styling */
+  .modal-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 400px;
+  }
+  
+  .modal-box h2 {
+    font-size: 1.8rem;
+    color: #1b1c1d;
+    margin-bottom: 1.5rem;
+  }
+  
+  .modal-box img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .modal-box a {
+    color: #f76902;
+    text-decoration: none;
+  }
+  
+  .modal-box a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button Styling for Modal */
+  .MuiButton-root {
+    background-color: #f76902;
+    color: white;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .MuiButton-root:hover {
+    background-color: #d55300;
+  }
+  

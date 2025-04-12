@@ -1,0 +1,227 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|c:\\users\\14153\\rit\\year 2\\semester 2\\iste340\\shapiroproject3\\shapiroproject3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|solutionrelative:shapiroproject3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|c:\\users\\14153\\rit\\year 2\\semester 2\\iste340\\shapiroproject3\\shapiroproject3\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|solutionrelative:shapiroproject3\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|c:\\users\\14153\\rit\\year 2\\semester 2\\iste340\\shapiroproject3\\shapiroproject3\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|solutionrelative:shapiroproject3\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|c:\\users\\14153\\rit\\year 2\\semester 2\\iste340\\shapiroproject3\\shapiroproject3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|solutionrelative:shapiroproject3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|c:\\users\\14153\\rit\\year 2\\semester 2\\iste340\\shapiroproject3\\shapiroproject3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|solutionrelative:shapiroproject3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|c:\\users\\14153\\rit\\year 2\\semester 2\\iste340\\shapiroproject3\\shapiroproject3\\shapiroproject3.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|solutionrelative:shapiroproject3\\shapiroproject3.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|c:\\users\\14153\\rit\\year 2\\semester 2\\iste340\\shapiroproject3\\shapiroproject3\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|solutionrelative:shapiroproject3\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|c:\\users\\14153\\rit\\year 2\\semester 2\\iste340\\shapiroproject3\\shapiroproject3\\controllers\\newcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|solutionrelative:shapiroproject3\\controllers\\newcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|c:\\users\\14153\\rit\\year 2\\semester 2\\iste340\\shapiroproject3\\shapiroproject3\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|solutionrelative:shapiroproject3\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|c:\\users\\14153\\rit\\year 2\\semester 2\\iste340\\shapiroproject3\\shapiroproject3\\services\\dataretrivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|solutionrelative:shapiroproject3\\services\\dataretrivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|c:\\users\\14153\\rit\\year 2\\semester 2\\iste340\\shapiroproject3\\shapiroproject3\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|solutionrelative:shapiroproject3\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|c:\\users\\14153\\rit\\year 2\\semester 2\\iste340\\shapiroproject3\\shapiroproject3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08F0C86D-5163-40B8-B59D-F99F0FBE28A6}|ShapiroProject3\\ShapiroProject3.csproj|solutionrelative:shapiroproject3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ShapiroProject3\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ShapiroProject3\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T14:45:05.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\appsettings.json",
+              "RelativeDocumentMoniker": "ShapiroProject3\\appsettings.json",
+              "ToolTip": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\appsettings.json",
+              "RelativeToolTip": "ShapiroProject3\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-10T14:43:11.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "ShapiroProject3\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "ShapiroProject3\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T14:35:32.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShapiroProject3",
+              "DocumentMoniker": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\ShapiroProject3.csproj",
+              "RelativeDocumentMoniker": "ShapiroProject3\\ShapiroProject3.csproj",
+              "ToolTip": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\ShapiroProject3.csproj",
+              "RelativeToolTip": "ShapiroProject3\\ShapiroProject3.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-10T14:34:47.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ShapiroProject3\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ShapiroProject3\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T14:29:57.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\Program.cs",
+              "RelativeDocumentMoniker": "ShapiroProject3\\Program.cs",
+              "ToolTip": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\Program.cs",
+              "RelativeToolTip": "ShapiroProject3\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T14:23:22.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NewController.cs",
+              "DocumentMoniker": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\Controllers\\NewController.cs",
+              "RelativeDocumentMoniker": "ShapiroProject3\\Controllers\\NewController.cs",
+              "ToolTip": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\Controllers\\NewController.cs",
+              "RelativeToolTip": "ShapiroProject3\\Controllers\\NewController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T14:22:44.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "ShapiroProject3\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "ShapiroProject3\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T14:05:05.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "ShapiroProject3\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "ShapiroProject3\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T14:35:34.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DataRetrivel.cs",
+              "DocumentMoniker": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\Services\\DataRetrivel.cs",
+              "RelativeDocumentMoniker": "ShapiroProject3\\Services\\DataRetrivel.cs",
+              "ToolTip": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\Services\\DataRetrivel.cs",
+              "RelativeToolTip": "ShapiroProject3\\Services\\DataRetrivel.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAQwB0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T13:53:28.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "ShapiroProject3\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "ShapiroProject3\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-10T14:37:09.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ShapiroProject3\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\14153\\RIT\\Year 2\\Semester 2\\ISTE340\\ShapiroProject3\\ShapiroProject3\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ShapiroProject3\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T13:51:34.968Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

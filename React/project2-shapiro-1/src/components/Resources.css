@@ -1,0 +1,120 @@
+
+.resources-page {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #1b1c1d;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+/*Header */
+.page-header h1 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid #f76902;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Headings */
+.resources-page section h2 {
+    font-size: 2rem;
+    color: #1b1c1d;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    /* border-left: 6px solid #f76902; */
+    padding-left: 0.75rem;
+}
+
+/* Subsection Headings */
+.advising-section h3,
+.study-abroad h3 {
+    font-size: 1.3rem;
+    color: #f76902;
+    margin-bottom: 0.5rem;
+}
+
+.resources-page p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.page-header p {
+    color: #888888;
+}
+
+/* Cards */
+.abroad-places {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.place-card {
+    background: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+/* Links */
+a {
+    color: #f76902;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+/* Advising  */
+.advising-section {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #fafafa;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+}
+
+.no-bullets {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+}
+
+.advisor-card {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: box-shadow 0.2s ease;
+}
+  
+
+#advisorEmail {
+    color: #888888;
+    padding-top: 1vh;
+    font-style: italic;
+}
+  
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .resources-page section h2 {
+        font-size: 1.6rem;
+    }
+}
+  

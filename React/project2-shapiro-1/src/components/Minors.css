@@ -1,0 +1,143 @@
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.clickable-course:hover {
+  text-decoration: underline;
+}
+
+#accordion1, #accordion2, #accordion3 {
+  --bs-accordion-btn-focus-box-shadow: #622900;
+  --bs-accordion-active-bg: #ffc772;
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.5 5l6 6 6-6z'/%3E%3C/svg%3E");
+}
+
+/* Shared Main Section Styling */
+.degrees-section, .minors-section {
+    max-width: 100%;
+    /* margin: 2rem auto; */
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+  }
+  
+/* Header */
+.degrees-section h1, .minors-section h1 {
+  font-size: 2rem;
+  color: #1b1c1d;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #f76902;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.degrees-section h3, .minors-section h3 {
+  font-size: 1.6rem;
+  color: #1b1c1d;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #f76902;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* Accordion */
+
+.accordion-button {
+  background-color: #1b1c1d;
+  font-weight: 500;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header {
+  background-color: #ffc772;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f4c6a5;
+  /* color: #ffffff; */
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.accordion-body ul {
+  list-style-type: none;
+  padding-left: 0; 
+  margin-top: 0.5rem;
+}
+
+#minor-course {
+  color: #f76902;
+}
+
+#minor-course:hover {
+  color: #d55300;
+}
+
+.accordion-body {
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 1rem;
+  border-top: 1px solid #eee;
+  padding: 2rem;
+  border-radius: 0 0 8px 8px;
+}
+
+/*  */
+a {
+  color: #f76902;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #d55300;
+}
+
+.degrees-section, .minors-section {
+  padding: 2rem 3rem;
+  margin-bottom: 3rem;
+}
+
+.degree-statistics {
+  margin-bottom: 4vh;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffc772;
+  color: black;
+}
+
+.accordion-button:hover {
+  background-color: #ffc772;
+  color: black;
+}
+
+::selection {
+  background-color: #ffc772;
+}
+
+.minors-section ::selection {
+  background-color: #ffc772;
+}
+
+
+@media (max-width: 768px) {
+  .degrees-section, .minors-section {
+    padding: 1rem;
+  }
+
+  .degrees-section h1, .minors-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .degrees-section h3, .minors-section h3 {
+    font-size: 1.4rem;
+  }
+}
+  
